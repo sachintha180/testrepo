@@ -1,0 +1,166 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+header,
+footer {
+    padding: 1rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    background-color: lightslategray;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    flex: 1;
+    margin: 0 0.2rem;
+    padding: 0.7rem;
+    text-decoration: none;
+    background-color: lightblue;
+    color: black;
+}
+
+main,
+form {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px #ccc;
+}
+
+nav a:nth-child(2n) {
+    background-color: lightskyblue;
+}
+
+h1 {
+    color: lightseagreen;
+}
+
+ul {
+    margin-top: 2rem;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    flex: 1;
+    margin: 0;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    margin: 0 0.1rem;
+    background-color: lightcoral;
+    font-weight: bold;
+}
+
+ul li:nth-child(2n) {
+    background-color: lightsalmon;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav a:hover {
+    background-color: darkseagreen;
+    color: green;
+}
+
+.user-info-row {
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align: left;
+    display: flex;
+}
+
+.user-info-row p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.user-info-row label {
+    text-align: left;
+    flex: 1;
+    font-weight: bold;
+    padding: 0.2rem;
+    margin-right: 1rem;
+    border-radius: 0.3rem;
+}
+
+.user-info-row label:not(.user-radio-row label) {
+    background-color: lightgray;
+}
+
+.user-info-row input, textarea {
+    flex: 2;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+}
+
+.user-radio-row {
+    display: flex;
+    flex: 1;
+}
+
+.user-radio-row > * {
+    margin-bottom: 0.5rem;
+}
+
+.user-radio-section {
+    flex: 2;
+}
+
+.user-radio-row label {
+    flex: 1;
+    font-weight: 400;
+    text-align: right;
+}
+
+.user-radio-button {
+    flex: 2;
+    max-height: 1rem;
+}
+
+#user-submit-btn {
+    background-color: lightblue;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    flex: 0.4;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+#user-submit-btn:hover {
+    background-color: darkseagreen;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 0.4rem;
+    border: 1px solid grey;
+}
+
+thead {
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+tr:hover:not(thead tr){
+    background-color: lightskyblue;
+}

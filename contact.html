@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <title>My Website</title>
+</head>
+
+<body>
+    <header>My Website</header>
+    <nav>
+        <a href="index.html" alt="Home Page">Home</a>
+        <a href="about.html" alt="About Page">About</a>
+        <a href="contact.html" alt="Contact Page">Contact</a>
+    </nav>
+    <form name="user-info">
+        <div class="user-info-row">
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" name="subject" required>
+        </div>
+        <div class="user-info-row">
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" name="first-name" required>
+        </div>
+        <div class="user-info-row">
+            <label for="phone-number">Phone Number</label>
+            <input id="phone-number" type="text" name="phone-number" required>
+        </div>
+        <div class="user-info-row">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email" required>
+        </div>
+        <div class="user-info-row">
+            <label>Nationality</label>
+            <div class="user-radio-section">
+                <div class="user-radio-row">
+                    <label for="srilankan">Sri Lankan</label>
+                    <input id="srilankan" class="user-radio-button" type="radio" name="nationality" value="Sri Lankan" required>
+                </div>
+                <div class="user-radio-row">
+                    <label for="foreigner">Foreigner</label>
+                    <input id="foreigner" class="user-radio-button" type="radio" name="nationality" value="Foreigner" required>
+                </div>
+            </div>
+        </div>
+        <div class="user-info-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+        </div>
+        <div class="user-info-row">
+            <input id="user-submit-btn" type="submit" value="Submit">
+        </div>
+    </form>
+    <br>
+    <br>
+    <div id="form-success">
+        <p>Form successfully submitted! Your data are as follows:</p>
+    </div>
+    <footer>Sachintha Senanayake <b>2023</b></footer>
+</body>
+
+</html>
